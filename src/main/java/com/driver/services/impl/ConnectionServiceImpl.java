@@ -115,12 +115,8 @@ public class ConnectionServiceImpl implements ConnectionService {
                 if (cc.equalsIgnoreCase(CountryName.AUS.toCode()))
                     countryName = CountryName.AUS.toString();
 
-                User user2 = connect(senderId,receiverId);
-                if (!user2.getConnected()){
-                    throw new Exception("Cannot establish communication");
 
-                }
-                else return user2;
+                else return user;
             }
 
         }
